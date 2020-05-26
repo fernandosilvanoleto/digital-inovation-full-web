@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Boloteca Investimentos S.A.</title>
+        <script type="text/javascript" src="js/main.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+       
+    </head>
+
+    <body onload="load()">
+        <button type="button" onclick="botaoClicado()">Clica aqui</button>
+        <p id="agradecimento" onclick="redirecionar()"></p>
+
+        <p id="mouseover" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+
+        <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+    </body>
+    
+</html>
