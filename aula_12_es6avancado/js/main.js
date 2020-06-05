@@ -40,7 +40,7 @@ function random() {
 
 console.log(multiply(1, undefined));
 */
-
+/*
 // Enhanced Object Literals
 function method() {
     console.log("fernando")
@@ -58,3 +58,42 @@ var obj = {
 };
 
 console.log(obj.sum(1, 2));
+*/
+
+/*
+
+function sum(a, b) {
+    var value = 0;
+
+    for(var i=0; i< arguments.length; i++) {
+        value += arguments[i];
+    }
+    return value;
+}
+
+console.log(sum(5, 5, 2, 3));
+
+function somar(... args) {
+    return args.reduce((acc, value) => acc + value, 0);
+}
+
+console.log(somar(5, 3));
+
+const sum1 = (a, b, ... rest) => {
+    console.log(a, b, rest);
+}
+
+console.log(sum(5, 7));
+*/
+
+var arr = ['Apple', 'Banana', 'Orange'];
+
+var apple = arr[0];
+
+var obj = {
+    name: 'Fernando'
+};
+
+var { name } = obj;
+
+console.log(name);
